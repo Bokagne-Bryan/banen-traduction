@@ -1,6 +1,10 @@
-[build]
-  command = "echo 'No build needed'"
-  publish = "Documents/langue"
+﻿[build]
+  command = "echo 
+'
+No build needed
+'
+"
+  publish = "."
 
 [[redirects]]
   from = "/*"
