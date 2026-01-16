@@ -1,8 +1,13 @@
 [build]
   command = "echo 'No build needed'"
-  publish = "."
+  publish = "Documents/langue"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "max-age=0, no-cache, no-store, must-revalidate"
