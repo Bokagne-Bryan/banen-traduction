@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Banen</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>🌍 Apprendre le Banen</h1>
+  <p>Traduction Banen ↔ Français</p>
+</header>
+
+<main>
+  <nav class="navigation">
+    <a href="index.html" class="nav-link">Traduction</a>
+    <a href="apprendre.html" class="nav-link">Apprentissage</a>
+    <a href="quiz.html" class="nav-link active">Quiz</a>
+  </nav>
+
+  <section class="quiz-section">
+    <h2>🎯 Quiz</h2>
+    
+    <div class="quiz-container">
+      <div class="score-bar">
+        <span>Score: <strong id="scoreQuiz">0</strong>/<strong id="totalQuiz">0</strong></span>
+        <span id="pourcentage" style="font-weight: bold; color: #2c7a7b;"></span>
+      </div>
+
+      <div id="quizContenu">
+        <div class="question-box">
+          <h3 id="questionTexte">Chargement du quiz...</h3>
+          <div id="reponses" class="reponses-grid">
+            <!-- Les réponses seront affichées ici -->
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-buttons">
+        <button id="btnSuivant" class="btn-suivant" style="display: none;">Question suivante</button>
+        <button id="btnRecommencer" class="btn-recommencer" style="display: none;">Recommencer le quiz</button>
+      </div>
+    </div>
+
+    <div id="resultatFinal" class="resultat-final" style="display: none;">
+      <h2>🎉 Quiz terminé!</h2>
+      <div class="score-display">
+        <p class="score-final">Votre score: <strong id="scoreFinal">0</strong>/<strong id="totalFinal">0</strong></p>
+        <p class="pourcentage-final" id="pourcentageFinal"></p>
+      </div>
+      <p id="messageFinal" class="message-final"></p>
+      <button id="btnRecommencer2" class="btn-recommencer">Recommencer le quiz</button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 – Langue Banen</p>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>
